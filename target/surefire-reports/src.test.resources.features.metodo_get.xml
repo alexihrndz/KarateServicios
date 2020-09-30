@@ -1,0 +1,10 @@
+<testsuite failures="0" name="src/test/resources/features/metodo_get.feature" skipped="0" tests="1" time="9.348484">
+  <testcase classname="src.test.resources.features.metodo_get" name="Servicio REST metodo GET" time="9.348484">
+    <system-out>* def urlPath = http + host ............................................... passed
+* def pathService = 'api/datamaster/getcitiesbyfranchisecountryapi' ....... passed
+Given url urlPath ......................................................... passed
+And path pathService ...................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+</testsuite>

@@ -1,0 +1,55 @@
+group 'Servicios Rest CEET'
+version '1.0'
+defaultTasks 'clean', 'test', 'aggregate'
+
+repositories {
+    jcenter()
+}
+
+buildscript {
+    repositories {
+        mavenLocal()
+        jcenter()
+    }
+    dependencies {
+        classpath("net.serenity-bdd:serenity-gradle-plugin:2.0.41")
+    }
+}
+
+allprojects {
+    apply plugin: 'java'
+    apply plugin: 'eclipse'
+    apply plugin: 'idea'
+    apply plugin: 'net.serenity-bdd.aggregator'
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+}
+
+ext{
+    serenityVersion = '2.0.87'
+    serenityCucumberVersion = '1.9.45'
+}
+dependencies {
+
+    //compile group: 'net.masterthought', name: 'cucumber-reporting', version: '5.3.0'
+    testImplementation 'net.masterthought:cucumber-reporting:5.3.0'
+    implementation "net.serenity-bdd:serenity-cucumber:$rootProject.ext.serenityCucumberVersion"
+    testImplementation 'junit:junit:4.12'
+    testImplementation 'org.assertj:assertj-core:3.6.2'
+    testImplementation 'org.slf4j:slf4j-log4j12:1.7.28'
+    testImplementation "net.serenity-bdd:serenity-core:$rootProject.ext.serenityVersion"
+    testImplementation "net.serenity-bdd:serenity-junit:$rootProject.ext.serenityVersion"
+    implementation group: 'com.google.code.gson', name: 'gson', version: '2.8.6'
+    testImplementation "net.serenity-bdd:serenity-screenplay-rest:$rootProject.ext.serenityVersion"
+    implementation group: 'com.intuit.karate', name: 'karate-apache', version: '0.9.4'
+    implementation group: 'com.intuit.karate', name: 'karate-junit4', version: '0.9.4'
+
+    compile 'org.apache.poi:poi-ooxml:4.0.1'
+    compile 'org.apache.poi:poi-ooxml-schemas:4.0.1'
+
+    testCompile('org.apache.poi:poi-ooxml:4.0.1')
+    testCompile('org.apache.poi:poi-ooxml-schemas:4.0.1')
+
+}
+
+gradle.startParameter.continueOnFailure = true
