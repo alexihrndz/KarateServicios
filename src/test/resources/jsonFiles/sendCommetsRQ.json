@@ -1,0 +1,9 @@
+{
+  "Name": "Nombre Apellido",
+  "Email": "direccion@correo.com",
+  "IdentityCard": "9999999",
+  "IdentityType": 2,
+  "Comment": "Comentario de pruebas",
+  "UserIsLogged": true,
+  "ContactEmail": "direccionContacto@correo.com"
+}
