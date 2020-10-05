@@ -10,7 +10,7 @@ import static com.ceet.utils.Parametros.AMBIENTE;
 import static com.ceet.utils.Parametros.RUTA_REPORTES;
 import static org.junit.Assert.assertEquals;
 
-@KarateOptions(features = {"src/test/resources/features/metodo_get.feature"})
+@KarateOptions(features = {"src/test/resources/features/metodo_post.feature"})
 public class BaseRunner {
     @Test
     public void runTest() {

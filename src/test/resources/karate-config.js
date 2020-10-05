@@ -61,15 +61,9 @@ var config = { };
                 emailAlternativoTestCR: 'qvision1002.alternativo@correo.com',
 
                 jsonFilesDir: '../../jsonFiles'
-
-
             };
                 break;
-
-
-
     }
-
   karate.configure('connectTimeout', 10000);
   karate.configure('readTimeout', 10000);
 //  karate.configure('ssl', true);
