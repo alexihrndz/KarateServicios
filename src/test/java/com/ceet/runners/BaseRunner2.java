@@ -10,8 +10,8 @@ import static com.ceet.utils.Parametros.AMBIENTE;
 import static com.ceet.utils.Parametros.RUTA_REPORTES;
 import static org.junit.Assert.assertEquals;
 
-@KarateOptions(features = {"src/test/resources/features/ServiciosAnidados.feature"})
-public class BaseRunner {
+@KarateOptions(features = {"src/test/resources/features/RecuperarExperienciaLaboral.feature"})
+public class BaseRunner2 {
     @Test
     public void runTest() {
         System.setProperty("karate.env", AMBIENTE);

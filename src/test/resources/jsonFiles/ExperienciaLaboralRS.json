@@ -1,0 +1,19 @@
+{
+	"Id":"#number",
+	"PersonId":"#number",
+	"Position":"experiencia 2",
+	"CityId":"#number",
+	"DepartmentId":"#number",
+	"CountryId":"#number",
+	"StartDate":"2018-10-03T00:00:00",
+	"EndDate":"2018-10-03T00:00:00",
+	"Achievements":"Logros obtenidos",
+	"EquivalentPositionId":"#number",
+	"PositionSubLevelId":"#number",
+	"WorkAreaId":"#number",
+	"CompanyName":"Eempresa 2",
+	"CompanySectorId":"#number",
+	"CompanyIndustryId":"#number",
+	"CompanyPhone":"312311212"
+}
+
